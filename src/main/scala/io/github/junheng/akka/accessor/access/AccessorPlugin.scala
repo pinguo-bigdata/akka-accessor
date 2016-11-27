@@ -1,8 +1,8 @@
 package io.github.junheng.akka.accessor.access
 
-import akka.actor.{ActorSystem, ActorRef}
+import akka.actor.{ActorRef, ActorSystem}
 import akka.event.LoggingAdapter
-import spray.http.HttpRequest
+import akka.http.scaladsl.model.HttpRequest
 
 trait AccessorPlugin {
   /**

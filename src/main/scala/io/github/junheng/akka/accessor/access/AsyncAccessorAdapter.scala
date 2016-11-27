@@ -29,7 +29,7 @@ trait AsyncAccessorAdapter extends AccessorAdapter {
       parseJsonMessageEntity(entity)
     }
     case entity: OctetMessageEntity => Future {
-      self.tell(OctetMessage(entity.payload), entity.caller)
+        self.tell(OctetMessage(entity.payload), entity.caller)
     }
     case entity: PartMessageEntity => Future {
       self.tell(PartMessage(entity.payload), entity.caller)
